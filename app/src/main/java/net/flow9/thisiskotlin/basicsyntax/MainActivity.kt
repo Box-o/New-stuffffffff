@@ -256,7 +256,37 @@ class MainActivity : AppCompatActivity() {
             var answer: Int = yearNow-age
             return answer
         }
-        Log.d("알고리즘 3번","출생년도 출력 결과는 ${solution(25)}입니다 ")
+        Log.d("알고리즘 4번","출생년도 출력 결과는 ${solution(25)}입니다 ")
+        */
+
+        /* 알고리즘 5번, 두 수 비교
+        fun solution(num1: Int, num2: Int): Int {
+            var answer: Int
+            if(num1 != num2){
+                answer = -1
+            }else{
+                answer = 1
+            }
+            return answer
+        }
+        Log.d("알고리즘 5번","숫자 비교 결과는 ${solution(22,22)}입니다 ")
+
+        */
+
+        /* 알고리즘 6번, 두 수의 합
+        fun solution(num1: Int, num2: Int): Int {
+        var answer: Int = num1+num2
+        return answer
+        }
+        Log.d("알고리즘 6번","두 수의 합은 ${solution(1,1)}입니다 ")
+        */
+
+        /* 알고리즘 7번, 두 수의 나눔
+        fun solution(num1: Int, num2: Int): Int {
+            var answer : Int = (num1 * 1000) / num2
+            return answer
+        }
+        Log.d("알고리즘 7번","두 수의 나눗셈은 ${solution(7,3)}입니다 ")
         */
 
 

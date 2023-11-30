@@ -11,6 +11,7 @@ import java.time.LocalDate
 
 //Command + option + l
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -288,6 +289,80 @@ class MainActivity : AppCompatActivity() {
         }
         Log.d("알고리즘 7번","두 수의 나눗셈은 ${solution(7,3)}입니다 ")
         */
+
+        /* 8번
+        문제 설명
+        각에서 0도 초과 90도 미만은 예각, 90도는 직각, 90도 초과 180도 미만은 둔각 180도는 평각으로 분류합니다.
+        각 angle이 매개변수로 주어질 때 예각일 때 1, 직각일 때 2, 둔각일 때 3, 평각일 때 4를 return하도록
+        solution 함수를 완성해주세요.
+
+        예각 : 0 < angle < 90
+        직각 : angle = 90
+        둔각 : 90 < angle < 180
+        평각 : angle = 180
+        */
+
+        /* 8번 2
+        fun calcal(angle: Int): Int {
+            var answer: Int = 0 // 초기값
+
+            if (angle in 1..90) {
+                answer = 1
+                println("현재 각도는 ${angle}도 이며, 예각입니다")
+            } else if (angle == 90) {
+                answer = 2
+                println("현재 각도는 ${angle}도 이며, 직각입니다")
+            } else if (angle in 91 until 180) {
+                answer = 3
+                println("현재 각도는 ${angle}도 이며, 둔각입니다")
+            } else if (angle == 180) {
+                answer = 4
+                println("현재 각도는 ${angle}도 이며, 평각입니다")
+            } else {
+                answer = 0
+                println("현재 각도는 ${angle}도 이며, 측정범위 오류입니다")
+            }
+            return answer
+        }
+        */
+
+        /* class 학습 니내눈지아니?
+        class GothamCity {
+            var name: String = "조선족"
+            //클래스 스코프 안에 위치한 변수 = 프로퍼티
+            fun printName(){
+                //클래스 스코프 안에 위치한 함수 = 메서드
+                var kiminoNamaeWa = "니 내 누군지 아니?"
+                //메서드 안에 위치한 변수 = 지역변수
+                Log.d("class", "${kiminoNamaeWa} ${name}이야!")
+            }
+        }
+
+        var jang = GothamCity()
+        //변수 jang에 인스턴스로 "Pig"Class를 할당한다
+
+        jang.name = "하얼빈의 장첸"
+        //변수 jang에 담긴 인스턴스 중 name 프로퍼티의 값을 "하얼빈의 장첸"으로 할당한다
+        //변수 jang에 담긴 인스턴스가 없는 경우 반드시 할당하고 호출해야 한다
+        jang.printName()
+        //변수 jang에 담긴 인스턴스 중 printName 메서드를 실행한다
+
+
+        /*로그 출력 결과
+         D  니 내 누군지 아니? 하얼빈의 장첸이야!
+        */
+        */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
